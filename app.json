@@ -1,0 +1,13 @@
+{
+    "name": "Jangle CMS",
+    "description": "a demo of Jangle CMS",
+    "website": "https://www.jangle.io",
+    "repository": "https://github.com/jangle-cms/demo",
+    "logo": "https://raw.githubusercontent.com/jangle-cms/cms/master/public/jangle.png",
+    "keywords": [
+        "jangle",
+        "cms",
+        "demo"
+    ],
+    "addons": [ "mongolab:sandbox" ]
+}
