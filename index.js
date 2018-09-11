@@ -11,7 +11,11 @@ jangle.start({
         type: String,
         required: true
       },
-      email: String
+      contact: {
+        email: String,
+        phone: String,
+        fax: String
+      }
     },
     'Blog Post': {
       name: {
@@ -19,10 +23,15 @@ jangle.start({
         type: String,
         required: true
       },
-      author: {
+      tags: [String],
+      date: {
+        type: Date,
+        required: false
+      },
+      authors: [{
         type: jangle.types.relationship,
         ref: 'Author'
-      }
+      }]
     }
   }
 })
