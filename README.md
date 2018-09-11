@@ -18,7 +18,29 @@
 
 ### Quick Guide
 
-Here is a quick series of screenshots to give you a sneak peek of the UI:
+Here's what you get with 20 lines of code:
+
+```js
+const jangle = require('@jangle/cms')
+
+jangle.start({
+  lists: {
+    'Blog Post': {
+      name: {
+        label: 'Title',
+        type: String,
+        required: true
+      },
+      content: {
+        type: String,
+        required: true,
+        richText: true
+      }
+    }
+  }
+})
+```
+
 
 ![Sign up screen](quick-guide/sign-up.png)
 
